@@ -1,0 +1,124 @@
+make -C ./ -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make: *** No rule to make target 'built-in.o', needed by 'digitpic'.  Stop.
+make: *** Waiting for unfinished jobs....
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame'
+make -C display -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[2]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/display'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.disp_manager.o.d -c -o disp_manager.o disp_manager.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.fb.o.d -c -o fb.o fb.c
+arm-linux-ld -r -o built-in.o disp_manager.o fb.o 
+make[2]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/display'
+make -C encoding -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[2]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/encoding'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.ascii.o.d -c -o ascii.o ascii.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.encoding_manager.o.d -c -o encoding_manager.o encoding_manager.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.utf-16be.o.d -c -o utf-16be.o utf-16be.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.utf-16le.o.d -c -o utf-16le.o utf-16le.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.utf-8.o.d -c -o utf-8.o utf-8.c
+arm-linux-ld -r -o built-in.o ascii.o encoding_manager.o utf-16be.o utf-16le.o utf-8.o 
+make[2]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/encoding'
+make -C fonts -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[2]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/fonts'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.ascii.o.d -c -o ascii.o ascii.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.fonts_manager.o.d -c -o fonts_manager.o fonts_manager.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.freetype.o.d -c -o freetype.o freetype.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.gbk.o.d -c -o gbk.o gbk.c
+arm-linux-ld -r -o built-in.o ascii.o fonts_manager.o freetype.o gbk.o 
+make[2]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/fonts'
+make -C input -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[2]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/input'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.input_manager.o.d -c -o input_manager.o input_manager.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.stdin.o.d -c -o stdin.o stdin.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.touchscreen.o.d -c -o touchscreen.o touchscreen.c
+arm-linux-ld -r -o built-in.o input_manager.o stdin.o touchscreen.o 
+make[2]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/input'
+make -C debug -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[2]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/debug'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.debug_manager.o.d -c -o debug_manager.o debug_manager.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.stdout.o.d -c -o stdout.o stdout.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.netprint.o.d -c -o netprint.o netprint.c
+arm-linux-ld -r -o built-in.o debug_manager.o stdout.o netprint.o 
+make[2]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/debug'
+make -C render -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[2]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/render'
+make -C format -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[3]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/render/format'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.picfmt_manager.o.d -c -o picfmt_manager.o picfmt_manager.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.bmp.o.d -c -o bmp.o bmp.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.jpg.o.d -c -o jpg.o jpg.c
+arm-linux-ld -r -o built-in.o picfmt_manager.o bmp.o jpg.o 
+make[3]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/render/format'
+make -C operation -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[3]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/render/operation'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.zoom.o.d -c -o zoom.o zoom.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.merge.o.d -c -o merge.o merge.c
+arm-linux-ld -r -o built-in.o zoom.o merge.o 
+make[3]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/render/operation'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.render.o.d -c -o render.o render.c
+arm-linux-ld -r -o built-in.o render.o format/built-in.o operation/built-in.o
+make[2]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/render'
+make -C page -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[2]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/page'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.page_manager.o.d -c -o page_manager.o page_manager.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.main_page.o.d -c -o main_page.o main_page.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.setting_page.o.d -c -o setting_page.o setting_page.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.interval_page.o.d -c -o interval_page.o interval_page.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.browse_page.o.d -c -o browse_page.o browse_page.c
+browse_page.c: In function ‘BrowsePageRun’:
+browse_page.c:914:57: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+                             snprintf(strTmp, 256, "%s/%s", g_strCurDir, g_aptDirContents[iDirFileContentIndex]->strName);
+                                                         ^
+browse_page.c:914:29: note: ‘snprintf’ output 2 or more bytes (assuming 257) into a destination of size 256
+                             snprintf(strTmp, 256, "%s/%s", g_strCurDir, g_aptDirContents[iDirFileContentIndex]->strName);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+browse_page.c:928:57: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+                             snprintf(strTmp, 256, "%s/%s", g_strCurDir, g_aptDirContents[iDirFileContentIndex]->strName);
+                                                         ^
+browse_page.c:928:29: note: ‘snprintf’ output 2 or more bytes (assuming 257) into a destination of size 256
+                             snprintf(strTmp, 256, "%s/%s", g_strCurDir, g_aptDirContents[iDirFileContentIndex]->strName);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+browse_page.c:943:80: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+                             snprintf(tPageParams.strCurPictureFile, 256, "%s/%s", g_strCurDir, g_aptDirContents[iDirFileContentIndex]->strName);
+                                                                                ^
+browse_page.c:943:29: note: ‘snprintf’ output 2 or more bytes (assuming 257) into a destination of size 256
+                             snprintf(tPageParams.strCurPictureFile, 256, "%s/%s", g_strCurDir, g_aptDirContents[iDirFileContentIndex]->strName);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.auto_page.o.d -c -o auto_page.o auto_page.c
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.manual_page.o.d -c -o manual_page.o manual_page.c
+manual_page.c: In function ‘ManualPageRun’:
+manual_page.c:653:70: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+                                 snprintf(strFullPathName, 256, "%s/%s", strDirName, aptDirContents[iPicFileIndex]->strName);
+                                                                      ^
+manual_page.c:653:33: note: ‘snprintf’ output 2 or more bytes (assuming 257) into a destination of size 256
+                                 snprintf(strFullPathName, 256, "%s/%s", strDirName, aptDirContents[iPicFileIndex]->strName);
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+manual_page.c:670:70: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+                                 snprintf(strFullPathName, 256, "%s/%s", strDirName, aptDirContents[iPicFileIndex]->strName);
+                                                                      ^
+manual_page.c:670:33: note: ‘snprintf’ output 2 or more bytes (assuming 257) into a destination of size 256
+                                 snprintf(strFullPathName, 256, "%s/%s", strDirName, aptDirContents[iPicFileIndex]->strName);
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-linux-ld -r -o built-in.o page_manager.o main_page.o setting_page.o interval_page.o browse_page.o auto_page.o manual_page.o 
+make[2]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/page'
+make -C file -f /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/Makefile.build
+make[2]: Entering directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/file'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.file.o.d -c -o file.o file.c
+file.c: In function ‘GetFilesIndir’:
+file.c:358:74: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+                 snprintf(apstrFileNames[*piFileCountHaveGet], 256, "%s/%s", strDirName, aptDirContents[i]->strName);
+                                                                          ^
+file.c:358:17: note: ‘snprintf’ output 2 or more bytes (assuming 257) into a destination of size 256
+                 snprintf(apstrFileNames[*piFileCountHaveGet], 256, "%s/%s", strDirName, aptDirContents[i]->strName);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.c:381:48: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+             snprintf(strSubDirName, 256, "%s/%s", strDirName, aptDirContents[i]->strName);
+                                                ^
+file.c:381:13: note: ‘snprintf’ output 2 or more bytes (assuming 257) into a destination of size 256
+             snprintf(strSubDirName, 256, "%s/%s", strDirName, aptDirContents[i]->strName);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-linux-ld -r -o built-in.o file.o 
+make[2]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame/file'
+arm-linux-gcc -Wall -O2 -g -I /home/book/nfs_rootfs/app_projects/14.digial_photo_frame/include -I /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2 -I /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/include/freetype2   -Wp,-MD,.main.o.d -c -o main.o main.c
+arm-linux-ld -r -o built-in.o main.o display/built-in.o encoding/built-in.o fonts/built-in.o input/built-in.o debug/built-in.o render/built-in.o page/built-in.o file/built-in.o
+make[1]: Leaving directory '/home/book/nfs_rootfs/app_projects/14.digial_photo_frame'
